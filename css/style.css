@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  width: 100%;
+  overflow: hidden;
+}
+
+.header {
+  width: 100%;
+  overflow: hidden;
+}
+
+.header2 {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: inline-block;
+  height: 24px;
+  width: 70px;
+  vertical-align: middle;
+  margin: 1rem 0 0 2rem;
+}
+
+nav {
+  float: right;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 48px;
+  margin: 8px 2rem 0 0;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  margin-left: 1rem;
+  line-height: 24px;
+  vertical-align: middle;
+}
+li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 13px;
+}
+li a:hover {
+  text-decoration: underline;
+}
+li .sign-in {
+  display: inline-block;
+  color: #f3f3f3;
+  background-color: #2b7de9;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.25px;
+  line-height: 16px;
+  min-width: 96px;
+  padding: 9px 23px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 4px;
+}
+li .sign-in:hover {
+  text-decoration: none;
+  box-shadow: 0 1px 2px 0 rgba(66, 133, 244, 0.3), 0 1px 3px 1px rgba(66, 133, 244, 0.15);
+}
+li .grid {
+  opacity: 0.5;
+  width: 24px;
+  margin-top: 8px;
+}
+li .grid:hover {
+  background-color: rgba(60, 64, 67, 0.5);
+  outline: none;
+  border-radius: 50%;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+.search .sumbit,
+.search input[type=submit] {
+  text-decoration: none;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 4px;
+  font-size: 14px;
+  margin: 11px 14px;
+  padding: 0 16px;
+  line-height: 36px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  background-color: #f8f9fa;
+  color: #202124;
+}
+.search .sumbit:hover,
+.search input[type=submit]:hover {
+  outline: none;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border: none;
+  background-color: rgba(248, 249, 250, 0.5);
+}
+
+.search-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.search-image img {
+  width: 272px;
+  height: 92px;
+}
+
+.search-form {
+  margin: 1rem auto;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  border: 1px solid rgba(154, 160, 166, 0.5);
+  margin: 10px;
+  padding-left: 15px;
+  height: 44px;
+  width: 100%;
+  margin-right: 0 auto;
+}
+.search-bar input {
+  border: none;
+  margin: 5px;
+  width: 524px;
+  margin-left: 15px;
+}
+.search-bar input:focus {
+  outline: none;
+}
+.search-bar .search-icon {
+  width: 20px;
+  height: 20px;
+}
+.search-bar .search-icon svg {
+  fill: rgba(154, 160, 166, 0.8);
+}
+
+.search-bar:hover {
+  box-shadow: 0.5px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.camera {
+  margin-top: 5px;
+  display: inline-block;
+  background-image: url("https://www.gstatic.com/images/icons/material/system/2x/photo_camera_grey600_24dp.png");
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+}
+
+.title {
+  margin: 25px 35px;
+}
+.title label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.line {
+  border-color: #dddd;
+  border-bottom: 1px solid #dddd;
+}
+
+.form-container {
+  max-width: 1440px;
+  min-width: 200px;
+  width: 96%;
+  margin: 40px 2% 0 45px;
+}
+.form-container .form {
+  clear: both;
+  color: #202124;
+}
+.form-container .form-title {
+  float: left;
+  min-width: 167px;
+  width: 16%;
+  font-size: 16px;
+  min-height: 42px;
+}
+.form-container .form-title .title-1 {
+  height: 30px;
+  vertical-align: middle;
+}
+.form-container .form-title .title-1 span {
+  color: #111;
+  display: inline-block;
+}
+.form-container .input-group {
+  clear: both;
+}
+.form-container .label {
+  color: #111;
+  float: left;
+  display: inline-block;
+  min-width: 167px;
+  width: 16%;
+  height: 42px;
+  color: #222;
+  font-size: 13px;
+  line-height: 16px;
+  vertical-align: middle;
+}
+.form-container .label .label-container {
+  height: 30px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.form-container .input {
+  float: left;
+  min-width: 167px;
+  min-height: 47px;
+  width: 50%;
+}
+.form-container .input .input-container {
+  padding-right: 16px;
+}
+.form-container .input .input-container .input-txt {
+  width: 100%;
+  text-align: left;
+  height: 29px;
+}
+.form-container .input .input-container .input-tt-1 {
+  text-align: left;
+  height: 29px;
+}
+.form-container .input input:focus {
+  outline: none;
+}
+
+/*# sourceMappingURL=style.css.map */
